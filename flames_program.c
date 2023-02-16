@@ -1,5 +1,6 @@
 #include<stdio.h> 
 #include<string.h> 
+#include<stdlib.h>
 #define ll long long 
 //void print(int value);
 int flames(int value);
@@ -12,6 +13,9 @@ int main()
     scanf("%s",str1);
     printf("Enter a girl name : ");
     scanf("%s",str2);
+    system("cls");
+    printf("boy name  is : %s\n",str1);
+    printf("girl name is : %s\n",str2);
     //scanf("%s%s",str1,str2);
     ll n1=strlen(str1),n2=strlen(str2),count=0,value;
     ll temp=1;
@@ -31,7 +35,7 @@ int main()
     //printf("%lld %lld",count,value);
     ll temp1=flames(value);
     char* strs[0][6];
-    strs[0][0] = "frinds";
+    strs[0][0] = "friends";
     strs[0][1] = "love";
     strs[0][2] = "affection";
     strs[0][3] = "marriage";
